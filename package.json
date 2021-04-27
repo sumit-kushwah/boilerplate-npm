@@ -1,6 +1,7 @@
 {
 	"name": "fcc-learn-npm-package-json",
 	"author": "Sumit Kushwah",
+	"description": "This is my getting started project for nodejs and microservice practice.",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
