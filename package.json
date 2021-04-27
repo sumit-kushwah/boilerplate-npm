@@ -1,5 +1,6 @@
 {
 	"name": "fcc-learn-npm-package-json",
+	"version": "1.0.0",
 	"author": "Sumit Kushwah",
 	"description": "This is my getting started project for nodejs and microservice practice.",
 	"keywords": [ "getting", "nodejs", "sumit", "freecodecamp" ],
