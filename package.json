@@ -3,6 +3,7 @@
 	"author": "Sumit Kushwah",
 	"description": "This is my getting started project for nodejs and microservice practice.",
 	"keywords": [ "getting", "nodejs", "sumit", "freecodecamp" ],
+	"license": "MIT",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
