@@ -33,6 +33,11 @@ app.route('/_api/package.json')
     });
   });
   
+app.route('/_api/hello-console')
+.get(function(req, res) {
+  console.log('Hello World');
+});
+
 app.route('/')
     .get(function(req, res) {
 		  res.sendFile(process.cwd() + '/views/index.html');
@@ -54,6 +59,6 @@ app.use(function(err, req, res, next) {
 })
 
 app.listen(process.env.PORT, function () {
-  console.log('Hello World');
+  console.log('Nodejs is listening...');
 });
 
