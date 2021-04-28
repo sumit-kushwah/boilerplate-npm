@@ -36,6 +36,7 @@ app.route('/_api/package.json')
 app.route('/_api/hello-console')
 .get(function(req, res) {
   console.log('Hello World');
+  res.type('txt').send('Hello World');
 });
 
 app.route('/')
@@ -58,7 +59,7 @@ app.use(function(err, req, res, next) {
   }  
 })
 
-app.listen(process.env.PORT, function () {
-  console.log('Nodejs is listening...');
+app.listen("8080", function () {
+  console.log('Nodejs is listening on port ' + process.env.PORT);
 });
 
