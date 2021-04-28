@@ -41,7 +41,7 @@ app.route('/_api/hello-console')
 
 app.route('/')
     .get(function(req, res) {
-		  res.sendFile(process.cwd() + '/views/index.html');
+		  res.send("Hello Express");
     })
 
 // Respond not found to all the wrong routes
@@ -59,7 +59,7 @@ app.use(function(err, req, res, next) {
   }  
 })
 
-app.listen("8080", function () {
+app.listen(process.env.PORT, function () {
   console.log('Nodejs is listening on port ' + process.env.PORT);
 });
 
