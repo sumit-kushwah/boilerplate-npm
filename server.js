@@ -35,8 +35,7 @@ app.route('/_api/package.json')
   
 app.route('/_api/hello-console')
 .get(function(req, res) {
-  console.log('Hello World');
-  res.type('txt').send('Hello World');
+  res.type('html').send('<html><body><p>sumit kushwah</p><script type="text/javascript">console.log("Hello World")</script></body></html>');
 });
 
 app.route('/')
